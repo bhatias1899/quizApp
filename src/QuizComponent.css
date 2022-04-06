@@ -1,0 +1,31 @@
+.question-green {
+  color: green;
+}
+.question-red {
+  color: red;
+}
+.question-header {
+  font-weight: 500;
+  color: black;
+  margin-right: 0.5rem;
+}
+.question {
+  display: flex;
+  padding: 1rem;
+}
+.Answer{
+    font-weight: 400;
+}
+.instruction-for-divison{
+  font-size: .675rem;
+}
+.range-and-operator{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Answer-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,35 @@
+
+.start-quiz-button {
+  color: midnightblue;
+  background: cadetblue;
+  border-radius: 4.5rem;
+  border-color: darkgray;
+  font-size: 1rem;
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.start-quiz-button-disabled {
+  color: midnightblue;
+  background: cadetblue;
+  border-radius: 4.5rem;
+  border-color: darkgray;
+  font-size: 1rem;
+  width: 6rem;
+  height: 3rem;
+  opacity: .5;
+  margin: 1rem;
+  pointer-events:none;
+
+}
+
+
+.range-selection {
+}
+.input-label {
+  margin: 0 0.5rem 0.5rem 0;
+}
+.min-max{
+  margin:1rem ;
+}

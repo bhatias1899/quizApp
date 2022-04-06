@@ -1,10 +1,28 @@
 .App {
   text-align: center;
+  background-color:darkgray;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.Quiz-container {
+  display: flex;
+  height: max-content;
+}
+.Quiz-section {
+  transition: box-shadow .5s;
+  border: 1px solid gray;
+  border-radius: 1rem 1.5rem;
+  height: 100%;
+  width: 40%;
+  margin: 0 5%;
+  padding: 1rem;
+  background: aliceblue;
+}
+.Quiz-section:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 @media (prefers-reduced-motion: no-preference) {
