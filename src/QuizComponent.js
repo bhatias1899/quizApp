@@ -55,7 +55,7 @@ const Quizcomponent = (props) => {
       QuestionNumber: questionNumber,
       Question: `What will be the value of ${randomNumber[0]} ${randomOperator} ${randomNumber[1]}?`,
       expected: expectedAnswer,
-      actual: answer,
+      userAnswer: answer,
       isCorrect: expectedAnswer.toString() === answer,
     };
     setQuestionLogs([...questionLogs, log]);
@@ -88,7 +88,7 @@ const Quizcomponent = (props) => {
       </div>
       {randomOperator === "/" && (
         <div className="instruction-for-divison">
-          (Answer upto 2 decimal places)
+          (Answer upto 2 decimal places,NaN,Infinity)
         </div>
       )}
 
@@ -125,9 +125,9 @@ const Quizcomponent = (props) => {
               <div
                 className={item.isCorrect ? "question-green" : "question-red"}
               >
-                {`Your Answer : ${item.expected}`}
+                {`Your Answer : ${item.userAnswer}`}
               </div>
-              <div>{`Actual Answer : ${item.actual}`}</div>
+              <div>{`Actual Answer : ${item.expected}`}</div>
             </div>
           </div>
         );
